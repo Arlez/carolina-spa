@@ -1,57 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/5dee76c536.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno|Lato:400,700,900|Relaway:400,700,900">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Carolina Spa</title>
-  </head>
-  <body>
-
-    <header class="encabezado-sitio container">
-      <div class="row justify-content-md-between align-items-center">
-          <div class="col-lg-4">
-            <a href="index.html">
-              <img src="img/logo.svg" alt="logo" class="img-fluid mx-auto d-block pt-4 pb-4">
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <nav class="sociales text-lg-right text-center">
-              <ul>
-                <li><a href="https://facebook.com/"> <span class="sr-only"> Facebook</span> </a></li>
-                <li><a href="https://twitter.com/"> <span class="sr-only"> Twitter</span> </a></li>
-                <li><a href="https://instagram.com/"> <span class="sr-only"> Instagram</span> </a></li>
-                <li><a href="https://pinterest.com/"> <span class="sr-only"> Pinteres</span> </a></li>
-                <li><a href="https://youtube.com/"> <span class="sr-only"> YouTube</span> </a></li>
-              </ul>
-            </nav>
-          </div>
-      </div>
-    </header>
-
-    <div class="navegacion mt-3 py-1">
-      <nav class="nav-principal navbar navbar-expand-md navbar-light bglfaded">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal" aria-label="Mostrar Navegacion">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand d-lg-none">Carolina Spa</a>
-        <div class="container">
-          <div class="collapse navbar-collapse w-100" id="nav_principal">
-            <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-              <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-              <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-              <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
-              <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
-              <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-          </div><!--.collapse-->
-        </div>
-      </nav>
-    </div>
+<?php
+$titulo = 'Nosotros';
+require_once('templates/header.php');
+require_once('templates/navegacion.php');
+?>
 
     <div class="container pt-4">
       <div class="row no-gutters">
@@ -170,43 +121,6 @@
       </div>
     </div>
 
-    <footer class="footer-sitio pt-5 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="text-uppercase text-center pb-4">nosotros</h3>
-            <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio omnis sed nam sint! Veritatis, ad dolor. Nihil amet harum dolore similique accusantium minus aliquid fuga.</p>
-          </div><!--.col-md-4-->
-          <div class="col-md-4 text-center ">
-            <h3 class="text-uppercase pb-4">horarios</h3>
-            <p>Lun-Vi: 9AM - 7PM</p>
-            <p>Sábado: 10am - 2pm</p>
-            <p>Domingo: Cerrado</p>
-          </div><!--.col-md-4-->
-          <div class="col-md-4 text-center">
-            <h3 class="text-uppercase pb-4">Contacto</h3>
-            <p>66 East Sunnyslope Avenue</p>
-            <p>Lansdowne,PA 19050</p>
-            <nav class="sociales text-center">
-              <ul>
-                <li><a href="https://facebook.com/"> <span class="sr-only"> Facebook</span> </a></li>
-                <li><a href="https://twitter.com/"> <span class="sr-only"> Twitter</span> </a></li>
-                <li><a href="https://instagram.com/"> <span class="sr-only"> Instagram</span> </a></li>
-                <li><a href="https://pinterest.com/"> <span class="sr-only"> Pinteres</span> </a></li>
-                <li><a href="https://youtube.com/"> <span class="sr-only"> YouTube</span> </a></li>
-              </ul>
-            </nav>
-          </div><!--.col-md-4-->
-
-          <hr class="w-100">
-          <p class="text-center copyright w-100">Carolina Spa & Salon 2021. Todos los derechos reservados</p>
-        </div><!--.row-->
-      </div>
-    </footer>
-
-    <script src="js/jquery.slim.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
-</html>
+<?php
+require_once('templates/footer.php')
+?>
